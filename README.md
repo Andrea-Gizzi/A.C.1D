@@ -6,7 +6,7 @@ Elaborato 1: Intermedio
 
 # A.C.1D
 Autore: Gizzi Andrea  
-[MediaPipe demo-ES6](https://andrea-gizzi.github.io/F0NTZ/)
+[A.C.1D]([https://andrea-gizzi.github.io/F0NTZ/](https://andrea-gizzi.github.io/A.C.1D/))
 
 SCIVERLO SENZA SPIEGARE CHE HO FATT UNA RICERCA ECC. DEVO ESSERE PIU OGGETTIVO SUL PROTOTIPO
 ## Introduzione e tema
