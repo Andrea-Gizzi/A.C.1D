@@ -74,19 +74,16 @@
 
         <div class="cap1">
             <p> 
-                <strong>Gli automi cellulari 1D</strong> sono tra gli automi cellulari più semplici. 
-                Si riferiscono a una griglia organizzata linearmente, dove ogni cella 
-                può essere viva (1) o morta (0). Questi automi, pur nella loro 
-                semplicità, possono generare pattern complessi e imprevedibili nel tempo. 
-                Ogni cella <strong>considera solo i suoi vicini</strong> immediati nel determinare il proprio 
-                stato futuro, ma il risultato complessivo può dar luogo a una grande varietà 
-                di comportamenti emergenti. Pensiamo al tempo che avanza di un passo alla volta. 
-                Lo stato di ogni cella al tempo t si basa sullo stato della cella stessa 
-                e delle celle alla sua sinistra e alla sua destra al tempo t-1.
+                <strong>Gli automi cellulari 1D</strong>sono tra gli automi cellulari più semplici organizzati 
+                linearmente con celle vive (1) o morte (0) capaci di generare pattern complessi, imprevedibili nel tempo 
+                e esteticamente attraenti. Ogni cella <strong>considera solo i suoi vicini immediati</strong> nel determinare 
+                il proprio stato futuro, ma il risultato può dar luogo a una grande varietà di comportamenti emergenti.
+                Il tempo procede di un passo alla volta e lo stato di ogni cella al tempo t si basa su quello della 
+                cella stessa e delle celle alla sua sinistra e alla sua destra al tempo t-1.
                 <br>
                 Se visualizziamo un automa cellulare 1D come una griglia 2D in cui l'asse orizzontale 
                 rappresenta <strong>il tempo</strong> e ogni riga rappresenta <strong>lo stato di ogni cella</strong> in quel momento, 
-                possiamo vedere emergere alcuni modelli interessanti.
+                possiamo osservare modelli interessanti emergere nel tempo.
             </p>
           
             <img src = "assets/imgs/PNG/8.png" class="immagine-png"> 
@@ -94,46 +91,11 @@
         </div>
         
 
-
         <div class="cap1">
             <p> 
-                Qui sopra potete vedere un'automa cellulare 1D visualizzato nel tempo, 
-                con le celle piene che rappresentano lo stato 1 e le celle vuote che rappresentano lo stato 0. 
-                Pur partendo dallo stesso stato iniziale, 
-                essi divergono rapidamente <strong>l'uno dall'altro</strong>, perché le regole di ogni automa sono diverse.
-                <br>
-                Abbiamo detto che lo stato di ogni cella al tempo <strong>t</strong> dipende dal suo stato e da quello 
-                dei suoi <strong>vicini diretti</strong> al tempo <strong>t-1</strong>. Possiamo visualizzare questa relazione con un'immagine di stato. 
-                Possiamo visualizzare questa relazione con una forma a "T", come questa:
-            </p>
-  
-            <img src = "assets/imgs/PNG/1.png" class="immagine-png2"> 
-            <img src = "assets/imgs/PNG/2.png" class="immagine-png"> 
-
-        </div>
-
-
-
-        <div class="cap1">
-            <p>
-                <strong>La regola di un automa</strong> esprime in quale stato dovrebbe trovarsi la cella "dopo" 
-                (al tempo t) dati i 3 stati "prima" (a t-1), per tutte le possibili configurazioni di tali stati. 
-                Ad esempio, una regola potrebbe includere la sottoregola "se sono 0 e i miei vicini di sinistra 
-                e di destra sono 1, dovrei diventare 1".
-            </p>
-
-            <img src = "assets/imgs/PNG/3.png" class="immagine-png"> 
-
-        </div>
-
-
-
-        <div class="cap1">
-            <p> 
-                Ogni sottoregola ha due parti: uno stato "prima" e uno stato "dopo".
-                Cerchiamo di capire di quante sottoregole ha bisogno un automa cellulare 1D per coprire ogni possibile stato "prima". 
-                Ogni stato prima della sottoregola include lo stato di <strong>3 celle</strong>, e ogni singola cella ha due possibili stati, 0 e 1.
-                Soluzione: se lo stato precedente coinvolgesse una sola cella, ci sarebbero due possibili stati prima, <strong>0 e 1</strong>.
+                Ogni sottoregola ha due parti: uno stato "prima" e uno stato "dopo". Per determinare quante sottoregole sono necessarie 
+                per coprire ogni possibile stato "prima", consideriamo che ogni stato prima della sottoregola coinvolge <strong>3 celle</strong>, 
+                ognuna con due possibili stati (0 o 1). Quindi, se consideriamo solo una cella, ci sono due possibili stati prima: <strong>0 e 1</strong>.
             </p>
             
             <img src = "assets/imgs/PNG/4.png" class="immagine-png"> 
@@ -141,25 +103,12 @@
         </div>
 
 
-
         <div class="cap1">
             <p>
-                L'aggiunta di una cella aggiunge due possibilità aggiuntive per ciascuna delle possibilità precedenti:
-            </p>
-
-            <img src = "assets/imgs/PNG/5.png" class="immagine-png2">
-            <img src = "assets/imgs/PNG/6.png" class="immagine-png"> 
-
-        </div>
-        
-
-
-        <div class="cap1">
-            <p>
-                Con la stessa logica, l'aggiunta di una terza cella raddoppia ancora una volta le possibilità, 
-                il che ci dà 2<sup>n</sup> possibili stati "prima" con 3 celle che hanno due stati possibili ciascuna. 
-                In generale, il numero di possibili stati per n celle è 2<sup>n</sup>. Con 3 celle, ce ne sono <strong>2<sup>3</sup></strong>
-                possibili prima degli stati, quindi abbiamo bisogno di <strong>8 sottoregole</strong>.
+                Quando aggiungiamo una seconda cella, ogni stato precedente ha due possibilità aggiuntive, e lo stesso accade con l'aggiunta 
+                di una terza cella. Quindi, con tre celle, ci sono 2<sup>3</sup> = 8 possibili stati precedenti. Questo perché, in generale, 
+                il numero di possibili stati per n celle è 2<sup>n</sup>. Quindi, con 3 celle, ci sono <strong>2<sup>3</sup> = 8</strong> possibili stati prima, 
+                e quindi abbiamo bisogno di <strong>8 sottoregole</strong>.
                 <br>
                 Poiché ogni regola ha solo poche sottoregole, possiamo scriverle tutte. 
                 Ad esempio, ecco tutte le sottoregole della Regola 30:
@@ -174,15 +123,16 @@
         
         <div class="cap1">
             <p>
-                Avrete notato che ci sono molti 0 e 1 dappertutto e che questo assomiglia molto al sistema binario, 
-                il sistema numerico utilizzato dai computer. Non è un caso. Infatti, <strong>il sistema di classificazione 
-                degli automi cellulari 1D</strong> prevede <strong>il sistema binario</strong>; il numero 30 della <strong>Regola 30</strong> è <strong>00011110</strong> in binario.
+                Avrete notato che gli stati sono composti da molti 0 e 1, simili al sistema binario. 
+                Non è un caso, poiché <strong>il sistema di classificazione degli automi cellulari 1D</strong> prevede <strong>il sistema binario</strong>; 
+                il numero 30 della <strong>Regola 30</strong>, ad esempio, è <strong>00011110</strong> in binario.
                 <br>
-                Quante regole possibili ci sono per gli automi cellulari 1D?
-                Ogni sottoregola ha uno dei due stati possibili. Poiché ci sono 8 sottoregole, ci sono <strong>2<sup>8</sup> o 256 regole possibili</strong>.
+                Quante regole possibili ci sono per gli automi cellulari 1D? Ogni sottoregola ha uno dei due stati possibili 
+                e ci sono 8 sottoregole, ci sono <strong>2<sup>8</sup> o 256 regole possibili</strong>. 
                 <br>
-                Alcune di queste regole sono incredibilmente noiose. Per esempio, la regola 0 rappresenta un mondo morto; 
-                indipendentemente dallo stato iniziale, le celle diventano e rimangono vuote. Altre sono molto interessanti.
+                Alcune di queste regole sono noiose, come la <strong>Regola 0</strong>, 
+                che rappresenta un mondo morto dove le celle rimangono sempre vuote, indipendentemente dallo stato iniziale. 
+                Tuttavia, altre regole possono rivelarsi estremamente interessanti.
             </p>
 
             <img src = "assets/imgs/PNG/7.png" class="immagine-png"> 
@@ -215,16 +165,16 @@
     <footer>
         <div class="footer-text-1">
             <p>
-                Altante tecnologico<br>
-                <br>
-                Automa Cellulare 1D<br>
+                La vita nell'automa cellulare<br>
                 Andrea Gizzi<br>
-                SUPSI CV2<br>
-                Interaction Design<br>
-                Anno 2023-2024<br>
+                <br>
                 Docenti: <br>
                 Andreas Gysin<br>
                 Giovanni Profeta<br>
+                <br>
+                SUPSI CV2<br>
+                Interaction Design<br>
+                Anno 2023-2024<br>
             </p>
             
         </div>
