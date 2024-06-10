@@ -158,13 +158,18 @@ header{
     opacity: 0.16;
 }
 
-.categoria img:hover{
+.metadata {
+    margin-bottom: 10px;
+}
+
+.metadata:hover img{
     opacity: 1;
     box-shadow: inset 0 0 0 1.6px #8700D9;
 }
 
-.metadata {
-    margin-bottom: 10px;
+.metadata:hover span{
+    display:none;
+    /*aggiungo codice binario*/
 }
 
 .metadata span{
