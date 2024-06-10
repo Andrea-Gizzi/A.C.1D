@@ -36,7 +36,7 @@ async function run() {
         let output = "";
         output += "<div class='info'>";
         output += "<div class='metadata'>";
-        output += "<span>" + data[i].binary_code + "</span>";
+        output += "<div class='code'>" + data[i].binary_code + "</div>";
         output += "<span>" + data[i].rule + "</span>";
         output += "<img src='../regole/assets/imgs/" + data[i].file + ".png'>";
         output += "</div>";

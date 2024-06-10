@@ -167,16 +167,27 @@ header{
     box-shadow: inset 0 0 0 1.6px #8700D9;
 }
 
-.metadata:hover span{
-    display:none;
-    /*aggiungo codice binario*/
-}
-
 .metadata span{
     color: rgb(0, 0, 0);
     font-size: 12px;
     display: block;
 }
+
+.metadata:hover span {
+    display: none;
+}
+
+.metadata .code {
+    display: none;
+}
+
+.metadata:hover .code {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    display: block;
+}
+
 
 #spazio{
     height: 100px;
