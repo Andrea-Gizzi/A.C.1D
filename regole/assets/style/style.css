@@ -10,10 +10,10 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-
 .sl {
     letter-spacing: 14px;
 }
+
 
 /* HEADER */ 
 header{
@@ -183,11 +183,9 @@ header{
 
 .metadata:hover .code {
     display: block;
-    color: rgb(0, 0, 0);
+    color: #8700D9;
     font-size: 12px;
-    display: block;
 }
-
 
 #spazio{
     height: 100px;
@@ -226,5 +224,16 @@ footer {
 @media only screen and (max-width: 600px) {
     .info{
         width: 40%;
+    }
+
+    #buttons-index {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+        color: rgb(0, 0, 0);
+        padding-right: 20px;
     }
   }
