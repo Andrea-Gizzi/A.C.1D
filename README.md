@@ -16,7 +16,7 @@ Nel mio caso, ho sviluppato un'interfaccia web interattiva che mostrasse la funz
 ## Riferimenti progettuali
 Nel progetto, non mi sono orientato su un modello specifico come riferimento progettuale; piuttosto, ho dedicato tempo a riflettere e approfondire su come inserire i diversi contenuti in modo chiaro e facilemnte comprensibile seguendo le loro esigenze di impaginazione. L'aspetto principale è stato selezionare un approccio visivo che valorizzasse ogni singolo contenuto in base alla ricerca in corso, rendendolo funzionale e facilmente leggibile.
 
-## Design dell’interfraccia e modalià di interazione
+## Design dell’interfaccia e modalià di interazione
 Il design dell'interfaccia risulta semplice, tutte le scelte sono state effettuate per aumentare l'interazione dell'utente, attraverso una buona ergonomia e un buon senso d'orientamento. L'interfaccia presenta una struttura uniforme in tutte le sue pagine:
 
 - Header: situato nella parte superiore, include bottoni intuitivi per la navigazione e per il ritorno alla pagina principale del corso.
