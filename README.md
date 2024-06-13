@@ -11,10 +11,10 @@ Autore: Gizzi Andrea
 ## Introduzione e tema
 La consegna consisteva nella realizzazione di una pagina web che mostri come ha avuto origine e come funziona un algoritmo.
 
-Nel mio caso, ho sviluppato un'interfaccia web interattiva che mostrasse la funzionalità e l'origine  dell'automa cellulare 1D. Dopo aver fatto una ricerca approfondita sull'algoritmo, attraverso articoli online ho potutto comprendere le informazioni necessarie ponendomi come obiettivo principale spiegare l'algoritmo in modo chiaro e intuitivo utilizzando testi esplicativi, interazioni e elementi visivi. L'interfaccia permette all'utente di navigare e approfondire attraverso tre diverse sezioni: la spiegazione dell'algoritmo, la sua storia e le regole che lo definiscono.
+Nel mio caso, ho sviluppato un'interfaccia web interattiva per mostrare la funzionalità e l'origine dell'automa cellulare 1D. Dopo aver fatto una ricerca approfondita sull'algoritmo, attraverso articoli online, ho acquisito le informazioni necessarie con l'obiettivo principale di spiegare chiaramente e intuitivamente l'algoritmo utilizzando testi esplicativi, interazioni e elementi visivi. L'interfaccia consente all'utente di navigare e approfondire attraverso tre diverse sezioni: la spiegazione dell'algoritmo, la sua storia e le regole che lo definiscono.
 
 ## Riferimenti progettuali
-Nel progetto, non mi sono orientato su un modello specifico come riferimento progettuale; piuttosto, ho dedicato tempo a riflettere e approfondire su come inserire i diversi contenuti in modo chiaro e facilemnte comprensibile seguendo le loro esigenze di impaginazione. L'aspetto principale è stato selezionare un approccio visivo che valorizzasse ogni singolo contenuto in base alla ricerca in corso, rendendolo funzionale e facilmente leggibile.
+Nel progetto, non mi sono orientato su un modello specifico come riferimento progettuale; piuttosto, ho dedicato tempo a riflettere e approfondire su come inserire i diversi contenuti in modo chiaro e facilemnte comprensibile seguendo le esigenze di impaginazione. L'aspetto principale è stato selezionare un approccio visivo che valorizzasse ogni singolo contenuto in base alla ricerca in corso, rendendolo funzionale e facilmente leggibile.
 
 ## Design dell’interfaccia e modalià di interazione
 Il design dell'interfaccia risulta semplice, tutte le scelte sono state effettuate per aumentare l'interazione dell'utente, attraverso una buona ergonomia e un buon senso d'orientamento. L'interfaccia presenta una struttura uniforme in tutte le sue pagine:
