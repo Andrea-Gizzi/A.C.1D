@@ -2,15 +2,18 @@ SUPSI 2022-23
 Corso d’interaction design, CV427.01  
 Docenti: A. Gysin, G. Profeta  
 
-Elaborato 1: Intermedio
+Elaborato 2: Intermedio
 
 # A.C.1D
 Autore: Gizzi Andrea  
 [A.C.1D](https://andrea-gizzi.github.io/A.C.1D/)
 
-SCIVERLO SENZA SPIEGARE CHE HO FATT UNA RICERCA ECC. DEVO ESSERE PIU OGGETTIVO SUL PROTOTIPO
 ## Introduzione e tema
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis donec. Nisi est sit amet facilisis magna etiam tempor. Nisl nisi scelerisque eu ultrices vitae. Id aliquet lectus proin nibh nisl. Urna nec tincidunt praesent semper feugiat nibh. Imperdiet dui accumsan sit amet nulla facilisi morbi. Aliquet enim tortor at auctor urna nunc. Id cursus metus aliquam eleifend mi. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Odio morbi quis commodo odio aenean sed. Turpis cursus in hac habitasse. Sed enim ut sem viverra aliquet eget sit. Iaculis at erat pellentesque adipiscing commodo. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Ipsum faucibus vitae aliquet nec ullamcorper sit. Tempus quam pellentesque nec nam aliquam sem et tortor. Turpis egestas sed tempus urna et pharetra pharetra massa. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
+La consegna consisteva nella realizzazione di una pagina web che mostri come ha avuto origine e come funziona un algoritmo.
+
+Nel mio caso, ho sviluppato un'interfaccia web interattiva per esplorare l'automa cellulare 1D. L'obiettivo principale dell'interfaccia è spiegare l'algoritmo in modo chiaro utilizzando testi esplicativi, interazioni e elementi visivi. L'utente ha la possibilità di navigare attraverso tre diverse sezioni: una spiegazione del funzionamento dell'algoritmo, la sua storia e le regole che lo definiscono.
+
+
 
 https://github.com/ixd-supsi/2024/raw/main/templates/template_README/doc/sdf_test.mp4
 
