@@ -103,6 +103,4 @@ function calculateState(a, b, c) {
 ```
 
 ## Target e contesto d’uso
-Sed enim ut sem viverra aliquet eget sit. Iaculis at erat pellentesque adipiscing commodo. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Ipsum faucibus vitae aliquet nec ullamcorper sit. Tempus quam pellentesque nec nam aliquam sem et tortor. Turpis egestas sed tempus urna et pharetra pharetra massa. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
-
-[<img src="doc/munari.jpg" width="300" alt="Supplemento al dizionario italiano">]()
+L'interfaccia è stata ideata originariamente come parte di una ricerca personale sull'Automa Cellulare 1D, ma si è evoluta per soddisfare le esigenze di una variegata gamma di utenti. È particolarmente adatta per professionisti e appassionati di informatica e matematica che utilizzano l'algoritmo per calcoli specifici, nonché per scienziati che studiano modelli complessi. Inoltre, è progettata per attrarre anche chi è semplicemente incuriosito dall'estetica e dalla dinamica dell'Automa Cellulare.
