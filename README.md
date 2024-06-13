@@ -11,7 +11,7 @@ Autore: Gizzi Andrea
 ## Introduzione e tema
 La consegna consisteva nella realizzazione di una pagina web che mostri come ha avuto origine e come funziona un algoritmo.
 
-Nel mio caso, ho sviluppato un'interfaccia web interattiva per esplorare l'automa cellulare 1D. L'obiettivo principale dell'interfaccia è spiegare l'algoritmo in modo chiaro utilizzando testi esplicativi, interazioni e elementi visivi. L'utente ha la possibilità di navigare attraverso tre diverse sezioni: una spiegazione del funzionamento dell'algoritmo, la sua storia e le regole che lo definiscono.
+Nel mio caso, ho sviluppato un'interfaccia web interattiva per esplorare l'automa cellulare 1D. L'obiettivo principale dell'interfaccia è spiegare l'algoritmo in modo chiaro utilizzando testi esplicativi, interazioni e elementi visivi. L'utente ha la possibilità di navigare attraverso tre diverse sezioni: la spiegazione dell'algoritmo, la sua storia e le regole che lo definiscono.
 
 
 
