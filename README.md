@@ -17,9 +17,19 @@ Nel mio caso, ho sviluppato un'interfaccia web interattiva che mostrasse la funz
 Nel progetto, non mi sono orientato su un modello specifico come riferimento progettuale; piuttosto, ho dedicato tempo a riflettere e approfondire su come inserire i diversi contenuti in modo chiaro e facilemnte comprensibile seguendo le loro esigenze di impaginazione. L'aspetto principale è stato selezionare un approccio visivo che valorizzasse ogni singolo contenuto in base alla ricerca in corso, rendendolo funzionale e facilmente leggibile.
 
 ## Design dell’interfraccia e modalià di interazione
-Facilisis magna etiam tempor orci eu. Felis donec et odio pellentesque diam volutpat commodo. Dis parturient montes nascetur ridiculus mus mauris vitae. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Accumsan sit amet nulla facilisi. Ultricies leo integer malesuada nunc vel risus. Est lorem ipsum dolor sit. Ultrices neque ornare aenean euismod elementum nisi. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Placerat duis ultricies lacus sed turpis tincidunt id aliquet. Arcu dictum varius duis at consectetur lorem donec massa sapien. Pellentesque habitant morbi tristique senectus. Turpis massa sed elementum tempus egestas sed sed risus pretium. Eros donec ac odio tempor orci. Pellentesque id nibh tortor id aliquet lectus. Risus feugiat in ante metus dictum at. Quam pellentesque nec nam aliquam sem et tortor consequat id. Feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Sit amet dictum sit amet justo donec enim.
+Il design dell'interfaccia risulta semplice, tutte le scelte sono state effettuate per aumentare l'interazione dell'utente, attraverso una buona ergonomia e un buon senso d'orientamento. L'interfaccia presenta una struttura uniforme in tutte le sue pagine:
 
-[<img src="doc/cards.gif" width="500" alt="Magic trick">]()
+- Header: situato nella parte superiore, include bottoni intuitivi per: la navigazione e per il ritorno alla pagina principale del corso.
+- Contenuti: centralizzati al centro della pagina, rendendo facile l'accesso e la comprensione dei materiali informativi.
+- Footer: collocato nella parte inferiore, contiene informazioni sul corso, il nome dell'interfaccia e tutta la sitografia.
+
+L'interfaccia supporta diverse modalità di interazione a seconda della pagina selezionata:
+
+- Home: utilizza un'animazione dell'algoritmo per guidare l'utente nello sviluppo della pagina, arricchita da testi alternati con illustrazioni e immagini.
+- Storia-Algoritmo: utilizza testi alternati con illustrazioni, immagini e gif per approfondire i contenuti trattati.
+- Regole: raccoglie tutte le regole che influenzano l'algoritmo, rendendole interattive mediante effetti di hover per evidenziarle e mostrare il relativo codice binario.
+
+Questa struttura uniforme e le modalità di interazione differenziate contribuiscono a rendere l'interfaccia accattivante e accessibile, promuovendo una navigazione chiara e informativa per gli utenti.
 
 
 ## Tecnologia usata
