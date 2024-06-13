@@ -137,8 +137,8 @@ main {
 }
 
 .content .cap1 {
-    padding: 20px 10px; /* Assicurati che questo padding non causi l'effetto indesiderato */
-    margin-top: 0; /* Aggiungi questa regola per assicurarti che non ci siano margini superiori */
+    padding: 20px 10px;
+    margin-top: 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
@@ -147,7 +147,7 @@ main {
     width: 100%;
     color: black;
     font-size: 18px;
-    border-top: 1px solid black; /* Verifica se questo bordo è necessario o rimuovilo se non serve */
+    border-top: 1px solid black;
 }
 
 .cap1:first-of-type {
@@ -157,11 +157,11 @@ main {
 .cap1 h2 {
     font-size: 18px;
     font-weight: 500;
-    grid-column: 1 / span 3; /* Posiziona h2 nelle colonne 1-3 */
+    grid-column: 1 / span 3;
 }
 
 .cap1 p {
-    grid-column: 5 / span 12; /* Posiziona p nelle colonne 4-10 */
+    grid-column: 5 / span 12;
 }
 
 .cap1 .citazioni {
