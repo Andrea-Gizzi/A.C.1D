@@ -2,7 +2,7 @@ SUPSI 2022-23
 Corso d’interaction design, CV427.01  
 Docenti: A. Gysin, G. Profeta  
 
-Elaborato 2: Intermedio
+Elaborato: Intermedio
 
 # A.C.1D
 Autore: Gizzi Andrea  
