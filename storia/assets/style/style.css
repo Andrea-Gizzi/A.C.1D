@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(255, 255, 255);
     color: white;
     font-family: 'Inter', sans-serif;
@@ -16,7 +16,7 @@ body{
 
 
 /* HEADER */ 
-header{
+header {
     font-family: 'Inter', sans-serif;
     position: fixed;
     top: 0;
@@ -40,7 +40,7 @@ header{
     transform: translateX(-50%);
 }
 
-.indexButton{
+.indexButton {
     font-family: 'Inter', sans-serif;
     margin-left: 10px;
     border: 1px solid black;
@@ -55,7 +55,7 @@ header{
     cursor: pointer;  
 }
 
-.indexButton:hover{
+.indexButton:hover {
     color: #8700D9;
     border: 1px solid #8700D9;
     background-color: #8600d920;
@@ -87,7 +87,7 @@ header{
     cursor: pointer;
 }
 
-#buttons button:hover{
+#buttons button:hover {
    background-color: #8700D9;
 }
 
@@ -98,7 +98,7 @@ header{
 
 
 /*MAIN*/
-main{
+main {
     margin-top: 80px;
     background-color: white;
     height: calc(100vh - 80px);
@@ -127,7 +127,7 @@ main{
     font-style: italic;
 }
 
-.content{
+.content {
     padding-top: 40px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -164,7 +164,12 @@ main{
     grid-column: 5 / span 12; /* Posiziona p nelle colonne 4-10 */
 }
 
-.cap1 .didascalia{
+.cap1 .citazioni {
+    grid-column: 5 / span 12;
+    font-size: 40px;
+}
+
+.cap1 .didascalia {
     grid-column: 5 / span 12;
     margin-top: 10px;
     text-align: right;
@@ -174,7 +179,7 @@ main{
     font-style: italic;
 }
 
-.cap1 .immagine{
+.cap1 .immagine {
     grid-column: 5 / span 12;
     display: block;
     margin-top: 40px;
@@ -182,7 +187,7 @@ main{
     height: auto;
 }
 
-.immagine-png{
+.immagine-png {
     grid-column: 5 / span 12;
     margin-top: 60px;
     height: auto;
@@ -190,13 +195,13 @@ main{
     margin-bottom: 60px;
 }
 
-.immagine-png2{
+.immagine-png2 {
     margin-top: 60px;
     height: auto;
     width: 100%;
 }
 
-#spazio{
+#spazio {
     height: 100px;
     background-color: white;
 }
@@ -213,7 +218,7 @@ footer {
     width: 100%;
 }
 
-.footer-text-1{
+.footer-text-1 {
     grid-column: 2/6;
     font-size: 14px;
     text-align: left;  
@@ -221,7 +226,7 @@ footer {
     padding-bottom: 60px;
 }
 
-.footer-text-2{
+.footer-text-2 {
     text-decoration: none;
     grid-column: 8/12;
     font-size: 14px;
@@ -229,6 +234,3 @@ footer {
     padding-top: 10px;
     padding-bottom: 60px;
 }
-
-
-/*RESPONSIVE*/
