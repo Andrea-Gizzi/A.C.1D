@@ -1,197 +1,203 @@
-
+<!-- HOME -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.C.1D</title>
-    <link rel="icon" type="image/x-icon" href="./assets/imgs/0favicon/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <script src="./assets/script/A.C.1D.js"></script>
-</head>
-<body>
-    <header>
+<html lang="en"> 
+    <head>
 
-        <button class="indexButton" onclick="window.location.href='https://ixd-supsi.github.io/2024/progetti/2_algoritmi/'">indice</button>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A.C.1D</title>
+        <link rel="icon" type="image/x-icon" href="./assets/imgs/0favicon/favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+        <link rel="stylesheet" href="./assets/style/style.css">
+        <script src="./assets/script/A.C.1D.js"></script>
 
+    </head>
+
+
+    <body>
+        <header>
+
+            <button class="indexButton" onclick="window.location.href='https://ixd-supsi.github.io/2024/progetti/2_algoritmi/'">indice</button>
+            
+            <div id="name">
+                A.C.1D
+            </div>
+
+            <div id="buttons">
+                <button id="algortimoButton" onclick="scrollToTitle()">Algoritmo</button>
+                <button id="storiaButtons" onclick="window.location.href='./storia/index.html'">Storia</button>
+                <button id="ruleButtons" onclick="window.location.href='./regole/index.html'">Regole</button>
+            </div>
+
+        </header>
+
+        <main id="main"></main>
+
+        <div id="titolo">
+            <h1 id="titolo-text"><em>A</em>utoma <span class="sl"><em>C</em></span>ellulare <em>1D</em></h1>
+        </div>
+
+        <div id="content">
         
-        <div id="name">
-            A.C.1D
+            <div class="cap1">
+
+                <p> 
+                    Gli automi cellulari rappresentano una forma di modellizzazione 
+                    computazionale che, nonostante la sua semplicità concettuale, 
+                    permette di studiare fenomeni complessi e di simulare una vasta gamma 
+                    di sistemi dinamici. La loro struttura di base comprende una griglia 
+                    di celle, ognuna delle quali può trovarsi in uno stato discreto, come 
+                    "<strong> acceso</strong>" o "<strong>spento</strong>", e l'evoluzione nel tempo di queste celle è regolata 
+                    da un insieme di semplici <strong> regole </strong> locali che determinano il cambiamento 
+                    di stato delle celle in base allo stato delle loro celle vicine.
+                    <br>
+                    Questo modello computazionale ha trovato applicazioni in numerosi 
+                    campi, dalla biologia alla fisica, dalla matematica alla computer science. 
+                    Ad esempio, in biologia, gli automi cellulari sono stati 
+                    utilizzati per simulare il comportamento di popolazioni cellulari, 
+                    modellare la diffusione di malattie o studiare l'evoluzione di 
+                    sistemi complessi come il sistema immunitario. In fisica, sono stati 
+                    utilizzati per studiare fenomeni di auto-organizzazione e emergenza 
+                    di pattern, mentre in matematica sono stati impiegati per investigare 
+                    la teoria del caos e la teoria dei sistemi dinamici.
+                </p>
+
+                <img src = "assets/imgs/JPEG/01.jpg" class="immagine"> 
+
+                <div id="didascalia">   
+                    <p>Modelli di automa cellulare sui gusci di molluschi tropicali</p>
+                </div>
+
+            </div>
+
+
+            <div class="cap1">
+
+                <p> 
+                    <strong>Gli automi cellulari 1D</strong>sono tra gli automi cellulari più semplici organizzati 
+                    linearmente con celle vive (1) o morte (0) capaci di generare pattern complessi, imprevedibili nel tempo 
+                    e esteticamente attraenti. Ogni cella <strong>considera solo i suoi vicini immediati</strong> nel determinare 
+                    il proprio stato futuro, ma il risultato può dar luogo a una grande varietà di comportamenti emergenti.
+                    Il tempo procede di un passo alla volta e lo stato di ogni cella al tempo t si basa su quello della 
+                    cella stessa e delle celle alla sua sinistra e alla sua destra al tempo t-1.
+                    <br>
+                    Se visualizziamo un automa cellulare 1D come una griglia 2D in cui l'asse orizzontale 
+                    rappresenta <strong>il tempo</strong> e ogni riga rappresenta <strong>lo stato di ogni cella</strong> in quel momento, 
+                    possiamo osservare modelli interessanti emergere nel tempo.
+                </p>
+            
+                <img src = "assets/imgs/PNG/8.png" class="immagine-png"> 
+
+            </div>
+
+            <div class="cap1">
+
+                <p> 
+                    Ogni sottoregola ha due parti: uno stato "prima" e uno stato "dopo". Per determinare quante sottoregole sono necessarie 
+                    per coprire ogni possibile stato "prima", consideriamo che ogni stato prima della sottoregola coinvolge <strong>3 celle</strong>, 
+                    ognuna con due possibili stati (0 o 1). Quindi, se consideriamo solo una cella, ci sono due possibili stati prima: <strong>0 e 1</strong>.
+                </p>
+                
+                <img src = "assets/imgs/PNG/4.png" class="immagine-png"> 
+
+            </div>
+
+            <div class="cap1">
+
+                <p>
+                    Quando aggiungiamo una seconda cella, ogni stato precedente ha due possibilità aggiuntive, e lo stesso accade con l'aggiunta 
+                    di una terza cella. Quindi, con tre celle, ci sono 2<sup>3</sup> = 8 possibili stati precedenti. Questo perché, in generale, 
+                    il numero di possibili stati per n celle è 2<sup>n</sup>. Quindi, con 3 celle, ci sono <strong>2<sup>3</sup> = 8</strong> possibili stati prima, 
+                    e quindi abbiamo bisogno di <strong>8 sottoregole</strong>.
+                    <br>
+                    Poiché ogni regola ha solo poche sottoregole, possiamo scriverle tutte. 
+                    Ad esempio, ecco tutte le sottoregole della Regola 30:
+                </p>
+
+                <img src = "assets/imgs/PNG/9.png" class="immagine-png"> 
+
+            </div>
+
+            <div class="cap1">
+
+                <p>
+                    Avrete notato che gli stati sono composti da molti 0 e 1, simili al sistema binario. 
+                    Non è un caso, poiché <strong>il sistema di classificazione degli automi cellulari 1D</strong> prevede <strong>il sistema binario</strong>; 
+                    il numero 30 della <strong>Regola 30</strong>, ad esempio, è <strong>00011110</strong> in binario.
+                    <br>
+                    Quante regole possibili ci sono per gli automi cellulari 1D? Ogni sottoregola ha uno dei due stati possibili 
+                    e ci sono 8 sottoregole, ci sono <strong>2<sup>8</sup> o 256 regole possibili</strong>. 
+                    <br>
+                    Alcune di queste regole sono noiose, come la <strong>Regola 0</strong>, 
+                    che rappresenta un mondo morto dove le celle rimangono sempre vuote, indipendentemente dallo stato iniziale. 
+                    Tuttavia, altre regole possono rivelarsi estremamente interessanti.
+                </p>
+
+                <img src = "assets/imgs/PNG/7.png" class="immagine-png"> 
+
+            </div>
+
+            <div class="cap1">
+
+                <p>
+                    La questione delle regole possibili per gli automi cellulari 1D porta ad una riflessione interessante 
+                    sul concetto di complessità emergente. Nonostante <strong>il numero finito di regole possibili</strong>, la loro combinazione 
+                    e interazione può generare una <strong>vasta gamma di comportamenti</strong>, alcuni dei quali possono essere estremamente 
+                    complessi e difficili da predire. In questo senso, gli automi cellulari offrono un esempio chiaro di come 
+                    <strong>la semplicità delle regole locali possa condurre a comportamenti globali ricchi di complessità e sorpresa.</strong>
+                </p>
+
+                <img src = "assets/imgs/JPEG/02.jpg" class="immagine"> 
+
+                <div id="didascalia">   
+                    Studio di modelli di automa cellulare 1D
+                </div>
+
+            </div>
+
         </div>
 
-        <div id="buttons">
-            <button id="algortimoButton" onclick="scrollToTitle()">Algoritmo</button>
-            <button id="storiaButtons" onclick="window.location.href='./storia/index.html'">Storia</button>
-            <button id="ruleButtons" onclick="window.location.href='./regole/index.html'">Regole</button>
-        </div>
+        <div id="spazio"></div>
 
-    </header>
+        <footer>
+            <div class="footer-text-1">
 
+                <p>
+                    La vita nell'automa cellulare<br>
+                    Andrea Gizzi<br>
+                    <br>
+                    Docenti: <br>
+                    Andreas Gysin<br>
+                    Giovanni Profeta<br>
+                    <br>
+                    SUPSI CV2<br>
+                    Interaction Design<br>
+                    Anno 2023-2024<br>
+                </p>
+                
+            </div>
 
-    <main id="main"></main>
+            <div class="footer-text-2">
+                    Sitografia <br></br>
 
-    <div id="titolo">
-        <h1 id="titolo-text"><em>A</em>utoma <span class="sl"><em>C</em></span>ellulare <em>1D</em></h1>
-    </div>
+                <p>
+                    <a href="https://vtol.cc/conus" style="text-decoration: none; color: white;">Vtol - <em>Conus</em></a> <br>
+                    <a href="https://slideplayer.it/slide/12804830/" style="text-decoration: none; color: white;">Slide Player - <em>Automa Cellulare</em></a> <br>
+                    <a href="https://it.wikipedia.org/wiki/Automa_cellulare" style="text-decoration: none; color: white;">Wikipedia - <em>Automa Cellulare</em></a> <br>
+                    <a href="https://en.wikipedia.org/wiki/Elementary_cellular_automaton" style="text-decoration: none; color: white;">Wikipedia - <em>Automa Cellulare 1D</em></a> <br>
+                    <a href="https://mathworld.wolfram.com/ElementaryCellularAutomaton.html" style="text-decoration: none; color: white;">WolframMathworld - <em>Automa Cellulare 1D</em></a> <br>
+                    <a href="https://github.com/Julian-Behnaz/Build-your-own-1D-Cellular-Automata" style="text-decoration: none; color: white;">Github - <em>Automa Cellulare 1D</em></a> <br>
+                    <a href="https://www.youtube.com/watch?v=Ggxt06qSAe4&t=997s" style="text-decoration: none; color: white;">Youtube - <em>Automa Cellulare 1D</em></a> <br>
+                    <a href="https://medium.com/code-music-noise/listening-to-elementary-cellular-automata-661018229362" style="text-decoration: none; color: white;">Medium - <em>Automa Cellulare 1D</em></a> <br>
+                </p>
 
-    <div id="content">
+            </div>
+
+        </footer>
+
+    </body>
+
     
-        <div class="cap1">
-            <p> 
-                Gli automi cellulari rappresentano una forma di modellizzazione 
-                computazionale che, nonostante la sua semplicità concettuale, 
-                permette di studiare fenomeni complessi e di simulare una vasta gamma 
-                di sistemi dinamici. La loro struttura di base comprende una griglia 
-                di celle, ognuna delle quali può trovarsi in uno stato discreto, come 
-                "<strong> acceso</strong>" o "<strong>spento</strong>", e l'evoluzione nel tempo di queste celle è regolata 
-                da un insieme di semplici <strong> regole </strong> locali che determinano il cambiamento 
-                di stato delle celle in base allo stato delle loro celle vicine.
-                <br>
-                Questo modello computazionale ha trovato applicazioni in numerosi 
-                campi, dalla biologia alla fisica, dalla matematica alla computer science. 
-                Ad esempio, in biologia, gli automi cellulari sono stati 
-                utilizzati per simulare il comportamento di popolazioni cellulari, 
-                modellare la diffusione di malattie o studiare l'evoluzione di 
-                sistemi complessi come il sistema immunitario. In fisica, sono stati 
-                utilizzati per studiare fenomeni di auto-organizzazione e emergenza 
-                di pattern, mentre in matematica sono stati impiegati per investigare 
-                la teoria del caos e la teoria dei sistemi dinamici.
-            </p>
-
-            <img src = "assets/imgs/JPEG/01.jpg" class="immagine"> 
-
-            <div id="didascalia">   
-                <p>Modelli di automa cellulare sui gusci di molluschi tropicali</p>
-            </div>
-
-        </div>
-
-
-
-        <div class="cap1">
-            <p> 
-                <strong>Gli automi cellulari 1D</strong>sono tra gli automi cellulari più semplici organizzati 
-                linearmente con celle vive (1) o morte (0) capaci di generare pattern complessi, imprevedibili nel tempo 
-                e esteticamente attraenti. Ogni cella <strong>considera solo i suoi vicini immediati</strong> nel determinare 
-                il proprio stato futuro, ma il risultato può dar luogo a una grande varietà di comportamenti emergenti.
-                Il tempo procede di un passo alla volta e lo stato di ogni cella al tempo t si basa su quello della 
-                cella stessa e delle celle alla sua sinistra e alla sua destra al tempo t-1.
-                <br>
-                Se visualizziamo un automa cellulare 1D come una griglia 2D in cui l'asse orizzontale 
-                rappresenta <strong>il tempo</strong> e ogni riga rappresenta <strong>lo stato di ogni cella</strong> in quel momento, 
-                possiamo osservare modelli interessanti emergere nel tempo.
-            </p>
-          
-            <img src = "assets/imgs/PNG/8.png" class="immagine-png"> 
-
-        </div>
-        
-
-        <div class="cap1">
-            <p> 
-                Ogni sottoregola ha due parti: uno stato "prima" e uno stato "dopo". Per determinare quante sottoregole sono necessarie 
-                per coprire ogni possibile stato "prima", consideriamo che ogni stato prima della sottoregola coinvolge <strong>3 celle</strong>, 
-                ognuna con due possibili stati (0 o 1). Quindi, se consideriamo solo una cella, ci sono due possibili stati prima: <strong>0 e 1</strong>.
-            </p>
-            
-            <img src = "assets/imgs/PNG/4.png" class="immagine-png"> 
-
-        </div>
-
-
-        <div class="cap1">
-            <p>
-                Quando aggiungiamo una seconda cella, ogni stato precedente ha due possibilità aggiuntive, e lo stesso accade con l'aggiunta 
-                di una terza cella. Quindi, con tre celle, ci sono 2<sup>3</sup> = 8 possibili stati precedenti. Questo perché, in generale, 
-                il numero di possibili stati per n celle è 2<sup>n</sup>. Quindi, con 3 celle, ci sono <strong>2<sup>3</sup> = 8</strong> possibili stati prima, 
-                e quindi abbiamo bisogno di <strong>8 sottoregole</strong>.
-                <br>
-                Poiché ogni regola ha solo poche sottoregole, possiamo scriverle tutte. 
-                Ad esempio, ecco tutte le sottoregole della Regola 30:
-            </p>
-
-            <img src = "assets/imgs/PNG/9.png" class="immagine-png"> 
-
-        </div>
-
-
-        
-        
-        <div class="cap1">
-            <p>
-                Avrete notato che gli stati sono composti da molti 0 e 1, simili al sistema binario. 
-                Non è un caso, poiché <strong>il sistema di classificazione degli automi cellulari 1D</strong> prevede <strong>il sistema binario</strong>; 
-                il numero 30 della <strong>Regola 30</strong>, ad esempio, è <strong>00011110</strong> in binario.
-                <br>
-                Quante regole possibili ci sono per gli automi cellulari 1D? Ogni sottoregola ha uno dei due stati possibili 
-                e ci sono 8 sottoregole, ci sono <strong>2<sup>8</sup> o 256 regole possibili</strong>. 
-                <br>
-                Alcune di queste regole sono noiose, come la <strong>Regola 0</strong>, 
-                che rappresenta un mondo morto dove le celle rimangono sempre vuote, indipendentemente dallo stato iniziale. 
-                Tuttavia, altre regole possono rivelarsi estremamente interessanti.
-            </p>
-
-            <img src = "assets/imgs/PNG/7.png" class="immagine-png"> 
-
-        </div>
-
-
-
-        <div class="cap1">
-            <p>
-                La questione delle regole possibili per gli automi cellulari 1D porta ad una riflessione interessante 
-                sul concetto di complessità emergente. Nonostante <strong>il numero finito di regole possibili</strong>, la loro combinazione 
-                e interazione può generare una <strong>vasta gamma di comportamenti</strong>, alcuni dei quali possono essere estremamente 
-                complessi e difficili da predire. In questo senso, gli automi cellulari offrono un esempio chiaro di come 
-                <strong>la semplicità delle regole locali possa condurre a comportamenti globali ricchi di complessità e sorpresa.</strong>
-            </p>
-
-            <img src = "assets/imgs/JPEG/02.jpg" class="immagine"> 
-
-            <div id="didascalia">   
-                Studio di modelli di automa cellulare 1D
-            </div>
-
-        </div>
-
-    </div>
-
-    <div id="spazio"></div>
-
-    <footer>
-        <div class="footer-text-1">
-            <p>
-                La vita nell'automa cellulare<br>
-                Andrea Gizzi<br>
-                <br>
-                Docenti: <br>
-                Andreas Gysin<br>
-                Giovanni Profeta<br>
-                <br>
-                SUPSI CV2<br>
-                Interaction Design<br>
-                Anno 2023-2024<br>
-            </p>
-            
-        </div>
-
-        <div class="footer-text-2">
-				Sitografia <br></br>
-            <p>
-				<a href="https://vtol.cc/conus" style="text-decoration: none; color: white;">Vtol - <em>Conus</em></a> <br>
-				<a href="https://slideplayer.it/slide/12804830/" style="text-decoration: none; color: white;">Slide Player - <em>Automa Cellulare</em></a> <br>
-				<a href="https://it.wikipedia.org/wiki/Automa_cellulare" style="text-decoration: none; color: white;">Wikipedia - <em>Automa Cellulare</em></a> <br>
-				<a href="https://en.wikipedia.org/wiki/Elementary_cellular_automaton" style="text-decoration: none; color: white;">Wikipedia - <em>Automa Cellulare 1D</em></a> <br>
-				<a href="https://mathworld.wolfram.com/ElementaryCellularAutomaton.html" style="text-decoration: none; color: white;">WolframMathworld - <em>Automa Cellulare 1D</em></a> <br>
-				<a href="https://github.com/Julian-Behnaz/Build-your-own-1D-Cellular-Automata" style="text-decoration: none; color: white;">Github - <em>Automa Cellulare 1D</em></a> <br>
-				<a href="https://www.youtube.com/watch?v=Ggxt06qSAe4&t=997s" style="text-decoration: none; color: white;">Youtube - <em>Automa Cellulare 1D</em></a> <br>
-				<a href="https://medium.com/code-music-noise/listening-to-elementary-cellular-automata-661018229362" style="text-decoration: none; color: white;">Medium - <em>Automa Cellulare 1D</em></a> <br>
-            </p>
-
-        </div>
-    </footer>
-</body>
 </html>

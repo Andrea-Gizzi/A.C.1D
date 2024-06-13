@@ -1,25 +1,24 @@
+// Variabili globali
 let categoria = '';
 
 run()
 async function run() {
     let data;
-
+ 
+    // Caricamento dati JSON
     await fetch("./assets/data/dati.json")
         .then(function(r) { return r.json() })
         .then(json => {
             data = json;
     });
 
-
-     //CATEGORIE
+    // Creazione categorie
     let categorie = [];
     for (let i = 0; i < data.length; i++) {
         if (!categorie.includes(data[i][categoria])) {
             categorie.push(data[i][categoria]);
         }
     }
-
-    console.log(categorie);
 
     let cats = "";
     categorie.sort();
@@ -29,8 +28,7 @@ async function run() {
 
     document.querySelector('main').innerHTML = cats;
     
-
-    //METADATI
+    // Creazione metadati
     for (let i = 0; i < data.length; i++) {
         let container = document.getElementById(data[i][categoria]);
         let output = "";
@@ -46,7 +44,7 @@ async function run() {
 }
 
 
-//CATEGORIA STANDARD PAGINA
+// Caricamento della finestra
 window.onload = function() {
     document.getElementById('ruleButton').classList.add('active');
 };

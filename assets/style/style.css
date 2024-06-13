@@ -15,7 +15,6 @@ body{
 }
 
 
-
 /* HEADER */ 
 header{
     font-family: 'Inter', sans-serif;
@@ -94,7 +93,6 @@ header{
     color: #ffffff;
     background-color: #8600d990;
 }
-
 
 
 /*MAIN*/
@@ -180,7 +178,6 @@ main{
 }
 
 
-
 /*FOOTER*/
 footer{
     display: grid;
@@ -208,7 +205,6 @@ footer{
     padding-top: 10px;
     padding-bottom: 60px;
 }
-
 
 
 /*RESPONSIVE*/

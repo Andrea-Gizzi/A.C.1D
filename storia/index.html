@@ -1,162 +1,169 @@
-
+<!-- STORIA -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.C.1D</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <script src="./assets/script/A.C.1D.js"></script>
-</head>
-<body>
-    <header>
+    <head>
 
-        <button class="indexButton" onclick="window.location.href='https://ixd-supsi.github.io/2024/progetti/2_algoritmi/'">indice</button>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A.C.1D</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+        <link rel="stylesheet" href="./assets/style/style.css">
+        <script src="./assets/script/A.C.1D.js"></script>
+
+    </head>
+
+
+    <body>
+        <header>
+
+            <button class="indexButton" onclick="window.location.href='https://ixd-supsi.github.io/2024/progetti/2_algoritmi/'">indice</button>
+            
+            <div id="name">
+                A.C.1D
+            </div>
+
+            <div id="buttons">
+                <button id="algoritmoButton" onclick="window.location.href='../index.html'">Algoritmo</button>
+                <button id="storiaButton" onclick="changeFilter('storia')">Storia</button>
+                <button id="ruleButton"onclick="window.location.href='../regole/index.html'">Regole</button>
+            </div>
+
+        </header>
+
+        <div id="titolo">
+            <h1 id="titolo-text"><span class="sl"><em>S</em></span>toria e <span class="sl"><em>O</em></span>rigini</h1>
+        </div>
+
+        <div id="content">
         
-        <div id="name">
-            A.C.1D
+            <div class="cap1">
+                Gli automi cellulari 1D hanno una storia che affonda le radici 
+                negli sforzi pionieristici di luminari come <strong>Stanislaw Ulam</strong> e 
+                <strong>John von Neumann</strong> negli anni '40. Ulam, mentre esplorava la crescita 
+                dei cristalli al Los Alamos National Laboratory, propose l'uso 
+                di una semplice <strong>rete reticolare</strong> come modello. Allo stesso tempo, 
+                von Neumann si impegnava nel problema dei <strong>sistemi auto-replicanti</strong>, 
+                tentando di sviluppare un robot che costruisse un altro robot, 
+                un concetto noto come "modello cinematico".<br>
+                <br>
+                Tuttavia, von Neumann presto riconobbe le sfide legate alla costruzione di un robot 
+                auto-replicante e si unì a Ulam nello sviluppo di <strong>un metodo per calcolare il movimento 
+                dei liquidi</strong>, considerando il liquido come un insieme di unità discrete. Questo concetto 
+                ha segnato <strong>la nascita del primo sistema di automi cellulari</strong>.
+                <br>
+                <img src = "assets/imgs/JPEG/John Von Neumann.jpg" class="immagine"> 
+
+                <div id="didascalia">   
+                    John Von Neumann
+                </div>
+
+            </div>
+
+            
+            <div class="cap1">
+                Il lavoro di von Neumann portò alla creazione di <strong>automi cellulari bidimensionali</strong>, 
+                inclusa la celebre "Costruttore Universale di von Neumann", capace di auto-replicarsi 
+                all'interno dello stesso automa cellulare. Intorno agli anni '60, gli automi cellulari 
+                furono studiati come un tipo di <strong>sistema dinamico</strong>, stabilendo una connessione 
+                con la dinamica simbolica.<br>
+                <br>
+                Nel frattempo, il concetto di automi cellulari fu sviluppato ulteriormente da <strong>Konrad Zuse</strong>, 
+                che propose <strong>la teoria della fisica digitale</strong>, suggerendo che le leggi fisiche dell'universo 
+                siano discrete per natura e che l'intero universo possa essere il risultato 
+                di un calcolo deterministico su un singolo automa cellulare.
+                <br>
+                <img src = "assets/imgs/JPEG/Konrad Zuse.jpg" class="immagine"> 
+
+                <div id="didascalia">   
+                    Konrad Zuse
+                </div>
+
+            </div>
+
+
+            <div class="cap1">
+                Negli anni '70, Alvy Ray Smith portò avanti la teoria degli automi cellulari, 
+                dimostrando che gli automi cellulari 1D sono <strong>universali di calcolo</strong>. Durante questo periodo, 
+                il famoso "<strong>Gioco della Vita</strong>" di John Conway divenne estremamente popolare, mostrando 
+                la complessità emergente da semplici regole di transizione.
+                <br>
+                <img src = "assets/imgs/JPEG/Gioco della Vita.gif" class="immagine"> 
+
+                <div id="didascalia">   
+                    Gioco della Vita
+                </div>
+
+            </div>
+
+
+            <div class="cap1">
+                <strong>Stephen Wolfram</strong> continuò questa tradizione di ricerca negli anni '80 e '90, 
+                esplorando il comportamento dei modelli complessi in <strong>natura</strong> attraverso gli automi cellulari. 
+                Il suo lavoro, incluso nel libro "A New Kind of Science" del 1983, rivitalizzò l'interesse 
+                per gli automi cellulari, portando alla luce il concetto di <strong>universalità computazionale</strong>, 
+                come dimostrato dalla Regola 110.
+                <br>
+                <img src = "assets/imgs/JPEG/Stephen Wolfram.jpg" class="immagine"> 
+
+                <div id="didascalia">   
+                    Stephen Wolfram
+                </div>
+
+            </div>
+
+            <div class="cap1">
+                <strong>La Regola 110</strong>, in particolare, ha ricevuto molta attenzione perché è stato dimostrato essere <strong>universalmente 
+                Turing-completo</strong> da Wolfram nel 2000, il che significa che può essere utilizzato per <strong>eseguire qualsiasi 
+                calcolo possibile</strong>. Questo ha sollevato molte discussioni e ha portato a un maggiore interesse 
+                per gli automi cellulari come modelli computazionali e strumenti per studiare la complessità e i sistemi dinamici.<br>
+                <br>
+                Questa storia illustre testimonia il ruolo cruciale degli automi cellulari nell'evoluzione del pensiero scientifico e matematico 
+                nel XX secolo, dimostrando il loro potenziale per comprendere <strong>la complessità e le dinamiche dei sistemi naturali e artificiali</strong>.
+                <br>
+                <img src = "assets/imgs/JPEG/Rule 110.gif" class="immagine"> 
+
+                <div id="didascalia">   
+                    Regola 110
+                </div>
+
+            </div>
+
+
         </div>
 
-        <div id="buttons">
-            <button id="algoritmoButton" onclick="window.location.href='../index.html'">Algoritmo</button>
-            <button id="storiaButton" onclick="changeFilter('storia')">Storia</button>
-            <button id="ruleButton"onclick="window.location.href='../regole/index.html'">Regole</button>
-        </div>
+        <div id="spazio"></div>
 
-    </header>
+        <footer>
+            <div class="footer-text-1">
+                Altante tecnologico<br>
+                <br>
+                Automa Cellulare 1D<br>
+                Andrea Gizzi<br>
+                SUPSI CV2<br>
+                Interaction Design<br>
+                Anno 2023-2024<br>
+                Docenti: <br>
+                Andreas Gysin<br>
+                Giovanni Profeta<br>
+            </div>
 
-    <div id="titolo">
-        <h1 id="titolo-text"><span class="sl"><em>S</em></span>toria e <span class="sl"><em>O</em></span>rigini</h1>
-    </div>
+            <div class="footer-text-2">
+                    Sitografia <br><br>
+                    <a href="https://vtol.cc/conus" style="text-decoration: none; color: white;">Vtol - <em>Conus</em></a> <br>
+                    <a href="https://slideplayer.it/slide/12804830/" style="text-decoration: none; color: white;">Slide Player - <em>Automa Cellulare</em></a> <br>
+                    <a href="https://it.wikipedia.org/wiki/Automa_cellulare" style="text-decoration: none; color: white;">Wikipedia - <em>Automa Cellulare</em></a> <br>
+                    <a href="https://en.wikipedia.org/wiki/Elementary_cellular_automaton" style="text-decoration: none; color: white;">Wikipedia - <em>Automa Cellulare 1D</em></a> <br>
+                    <a href="https://mathworld.wolfram.com/ElementaryCellularAutomaton.html" style="text-decoration: none; color: white;">WolframMathworld - <em>Automa Cellulare 1D</em></a> <br>
+                    <a href="https://github.com/Julian-Behnaz/Build-your-own-1D-Cellular-Automata" style="text-decoration: none; color: white;">Github - <em>Automa Cellulare 1D</em></a> <br>
+                    <a href="https://www.youtube.com/watch?v=Ggxt06qSAe4&t=997s" style="text-decoration: none; color: white;">Youtube - <em>Automa Cellulare 1D</em></a> <br>
+                    <a href="https://medium.com/code-music-noise/listening-to-elementary-cellular-automata-661018229362" style="text-decoration: none; color: white;">Medium - <em>Automa Cellulare 1D</em></a> <br>
+            </div>
 
-    <div id="content">
+        </footer>
+
+    </body>
+
     
-        <div class="cap1">
-            Gli automi cellulari 1D hanno una storia che affonda le radici 
-            negli sforzi pionieristici di luminari come <strong>Stanislaw Ulam</strong> e 
-            <strong>John von Neumann</strong> negli anni '40. Ulam, mentre esplorava la crescita 
-            dei cristalli al Los Alamos National Laboratory, propose l'uso 
-            di una semplice <strong>rete reticolare</strong> come modello. Allo stesso tempo, 
-            von Neumann si impegnava nel problema dei <strong>sistemi auto-replicanti</strong>, 
-            tentando di sviluppare un robot che costruisse un altro robot, 
-            un concetto noto come "modello cinematico".<br>
-            <br>
-            Tuttavia, von Neumann presto riconobbe le sfide legate alla costruzione di un robot 
-            auto-replicante e si unì a Ulam nello sviluppo di <strong>un metodo per calcolare il movimento 
-            dei liquidi</strong>, considerando il liquido come un insieme di unità discrete. Questo concetto 
-            ha segnato <strong>la nascita del primo sistema di automi cellulari</strong>.
-            <br>
-            <img src = "assets/imgs/JPEG/John Von Neumann.jpg" class="immagine"> 
-
-            <div id="didascalia">   
-                John Von Neumann
-            </div>
-
-        </div>
-
-        
-        <div class="cap1">
-            Il lavoro di von Neumann portò alla creazione di <strong>automi cellulari bidimensionali</strong>, 
-            inclusa la celebre "Costruttore Universale di von Neumann", capace di auto-replicarsi 
-            all'interno dello stesso automa cellulare. Intorno agli anni '60, gli automi cellulari 
-            furono studiati come un tipo di <strong>sistema dinamico</strong>, stabilendo una connessione 
-            con la dinamica simbolica.<br>
-            <br>
-            Nel frattempo, il concetto di automi cellulari fu sviluppato ulteriormente da <strong>Konrad Zuse</strong>, 
-            che propose <strong>la teoria della fisica digitale</strong>, suggerendo che le leggi fisiche dell'universo 
-            siano discrete per natura e che l'intero universo possa essere il risultato 
-            di un calcolo deterministico su un singolo automa cellulare.
-            <br>
-            <img src = "assets/imgs/JPEG/Konrad Zuse.jpg" class="immagine"> 
-
-            <div id="didascalia">   
-                Konrad Zuse
-            </div>
-
-        </div>
-
-
-        <div class="cap1">
-            Negli anni '70, Alvy Ray Smith portò avanti la teoria degli automi cellulari, 
-            dimostrando che gli automi cellulari 1D sono <strong>universali di calcolo</strong>. Durante questo periodo, 
-            il famoso "<strong>Gioco della Vita</strong>" di John Conway divenne estremamente popolare, mostrando 
-            la complessità emergente da semplici regole di transizione.
-            <br>
-            <img src = "assets/imgs/JPEG/Gioco della Vita.gif" class="immagine"> 
-
-            <div id="didascalia">   
-                Gioco della Vita
-            </div>
-
-        </div>
-
-
-        <div class="cap1">
-            <strong>Stephen Wolfram</strong> continuò questa tradizione di ricerca negli anni '80 e '90, 
-            esplorando il comportamento dei modelli complessi in <strong>natura</strong> attraverso gli automi cellulari. 
-            Il suo lavoro, incluso nel libro "A New Kind of Science" del 1983, rivitalizzò l'interesse 
-            per gli automi cellulari, portando alla luce il concetto di <strong>universalità computazionale</strong>, 
-            come dimostrato dalla Regola 110.
-            <br>
-            <img src = "assets/imgs/JPEG/Stephen Wolfram.jpg" class="immagine"> 
-
-            <div id="didascalia">   
-                Stephen Wolfram
-            </div>
-
-        </div>
-
-        <div class="cap1">
-            <strong>La Regola 110</strong>, in particolare, ha ricevuto molta attenzione perché è stato dimostrato essere <strong>universalmente 
-            Turing-completo</strong> da Wolfram nel 2000, il che significa che può essere utilizzato per <strong>eseguire qualsiasi 
-            calcolo possibile</strong>. Questo ha sollevato molte discussioni e ha portato a un maggiore interesse 
-            per gli automi cellulari come modelli computazionali e strumenti per studiare la complessità e i sistemi dinamici.<br>
-            <br>
-            Questa storia illustre testimonia il ruolo cruciale degli automi cellulari nell'evoluzione del pensiero scientifico e matematico 
-            nel XX secolo, dimostrando il loro potenziale per comprendere <strong>la complessità e le dinamiche dei sistemi naturali e artificiali</strong>.
-            <br>
-            <img src = "assets/imgs/JPEG/Rule 110.gif" class="immagine"> 
-
-            <div id="didascalia">   
-                Regola 110
-            </div>
-
-        </div>
-
-
-    </div>
-
-    <div id="spazio"></div>
-
-
-    <footer>
-        <div class="footer-text-1">
-            Altante tecnologico<br>
-            <br>
-            Automa Cellulare 1D<br>
-            Andrea Gizzi<br>
-            SUPSI CV2<br>
-            Interaction Design<br>
-            Anno 2023-2024<br>
-            Docenti: <br>
-            Andreas Gysin<br>
-            Giovanni Profeta<br>
-        </div>
-
-        <div class="footer-text-2">
-				Sitografia <br><br>
-				<a href="https://vtol.cc/conus" style="text-decoration: none; color: white;">Vtol - <em>Conus</em></a> <br>
-				<a href="https://slideplayer.it/slide/12804830/" style="text-decoration: none; color: white;">Slide Player - <em>Automa Cellulare</em></a> <br>
-				<a href="https://it.wikipedia.org/wiki/Automa_cellulare" style="text-decoration: none; color: white;">Wikipedia - <em>Automa Cellulare</em></a> <br>
-				<a href="https://en.wikipedia.org/wiki/Elementary_cellular_automaton" style="text-decoration: none; color: white;">Wikipedia - <em>Automa Cellulare 1D</em></a> <br>
-				<a href="https://mathworld.wolfram.com/ElementaryCellularAutomaton.html" style="text-decoration: none; color: white;">WolframMathworld - <em>Automa Cellulare 1D</em></a> <br>
-				<a href="https://github.com/Julian-Behnaz/Build-your-own-1D-Cellular-Automata" style="text-decoration: none; color: white;">Github - <em>Automa Cellulare 1D</em></a> <br>
-				<a href="https://www.youtube.com/watch?v=Ggxt06qSAe4&t=997s" style="text-decoration: none; color: white;">Youtube - <em>Automa Cellulare 1D</em></a> <br>
-				<a href="https://medium.com/code-music-noise/listening-to-elementary-cellular-automata-661018229362" style="text-decoration: none; color: white;">Medium - <em>Automa Cellulare 1D</em></a> <br>
-        </div>
-    </footer>
-</body>
 </html>

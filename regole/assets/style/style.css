@@ -15,7 +15,6 @@ body{
 }
 
 
-
 /* HEADER */ 
 header{
     font-family: 'Inter', sans-serif;
@@ -96,8 +95,7 @@ header{
 }
 
 
-
-/*CATEGORIA*/
+/*MAIN*/
 #main{
     margin-top: 28px;
     margin-left: auto;
@@ -188,7 +186,6 @@ header{
 }
 
 
-
 /*FOOTER*/
 footer {
     display: grid;
@@ -216,7 +213,6 @@ footer {
     padding-top: 10px;
     padding-bottom: 60px;
 }
-
 
 
 /*RESPONSIVE*/
