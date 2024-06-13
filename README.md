@@ -17,16 +17,16 @@ Nel mio caso, ho sviluppato un'interfaccia web interattiva per mostrare la funzi
 Nel progetto, non mi sono orientato su un modello specifico come riferimento progettuale; piuttosto, ho dedicato tempo a riflettere e approfondire su come inserire i diversi contenuti in modo chiaro e facilemnte comprensibile seguendo le esigenze di impaginazione. L'aspetto principale è stato selezionare un approccio visivo che valorizzasse ogni singolo contenuto in base alla ricerca in corso, rendendolo funzionale e facilmente leggibile.
 
 ## Design dell’interfaccia e modalià di interazione
-Il design dell'interfaccia risulta semplice, tutte le scelte sono state effettuate per aumentare l'interazione dell'utente, attraverso una buona ergonomia e un buon senso d'orientamento. L'interfaccia presenta una struttura uniforme in tutte le sue pagine:
+Il design dell'interfaccia è semplice, tutte le scelte sono state effettuate per aumentare l'interazione dell'utente, attraverso una buona ergonomia e un chiaro orientamento. L'interfaccia presenta una struttura uniforme su tutte le pagine:
 
 - Header: situato nella parte superiore, include bottoni intuitivi per la navigazione e per il ritorno alla pagina principale del corso.
 - Contenuti: centralizzati al centro della pagina, rendendo facile l'accesso e la comprensione dei materiali informativi.
-- Footer: collocato nella parte inferiore, contiene informazioni sul corso, il nome dell'interfaccia e tutta la sitografia.
+- Footer: collocato nella parte inferiore, contiene informazioni sul corso, il nome dell'interfaccia e la sitografia.
 
 L'interfaccia supporta diverse modalità di interazione a seconda della pagina selezionata:
 
 - Home: utilizza un'animazione dell'algoritmo per guidare l'utente nello sviluppo della pagina, arricchita da testi alternati con illustrazioni e immagini.
-- Storia-Algoritmo: utilizza testi alternati con illustrazioni, immagini e gif per approfondire i contenuti trattati.
+- Algoritmo-Storia: utilizza testi alternati con illustrazioni, immagini e gif per approfondire i contenuti trattati.
 - Regole: raccoglie tutte le regole che influenzano l'algoritmo, rendendole interattive mediante effetti di hover per evidenziarle e mostrare il relativo codice binario.
 
 Questa struttura uniforme e le modalità di interazione differenziate contribuiscono a rendere l'interfaccia accattivante e accessibile, promuovendo una navigazione chiara e informativa per gli utenti.
@@ -103,4 +103,4 @@ function calculateState(a, b, c) {
 ```
 
 ## Target e contesto d’uso
-L'interfaccia è stata ideata originariamente come parte di una ricerca personale sull'Automa Cellulare 1D, ma si è evoluta per soddisfare le esigenze di una variegata gamma di utenti. È particolarmente adatta per professionisti e appassionati di informatica e matematica che utilizzano l'algoritmo per calcoli specifici, nonché per scienziati che studiano modelli complessi. Inoltre, è progettata per attrarre anche chi è semplicemente incuriosito dall'estetica e dalla dinamica dell'Automa Cellulare.
+L'interfaccia è stata ideata originariamente come parte di una ricerca personale sull'Automa Cellulare 1D, ma è stata sviluppata per soddisfare le esigenze di una vasta gamma di utenti. È particolarmente adatta per professionisti e appassionati di informatica e matematica che utilizzano l'algoritmo per calcoli specifici, nonché per scienziati che studiano modelli complessi. Inoltre, è progettata per attrarre anche chi è semplicemente incuriosito dall'estetica e dalla dinamica dell'Automa Cellulare.
