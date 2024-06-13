@@ -13,10 +13,6 @@ La consegna consisteva nella realizzazione di una pagina web che mostri come ha 
 
 Nel mio caso, ho sviluppato un'interfaccia web interattiva per esplorare l'automa cellulare 1D. L'obiettivo principale dell'interfaccia è spiegare l'algoritmo in modo chiaro utilizzando testi esplicativi, interazioni e elementi visivi. L'utente ha la possibilità di navigare attraverso tre diverse sezioni: la spiegazione dell'algoritmo, la sua storia e le regole che lo definiscono.
 
-
-
-https://github.com/ixd-supsi/2024/raw/main/templates/template_README/doc/sdf_test.mp4
-
 ## Riferimenti progettuali
 Dolor sit amet consectetur adipiscing elit duis tristique. Sociis natoque penatibus et magnis dis parturient montes nascetur. Est sit amet facilisis magna. Tellus rutrum tellus pellentesque eu. Dictum sit amet justo donec enim. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed faucibus turpis in eu mi bibendum neque egestas congue. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Dolor magna eget est lorem ipsum dolor. Sit amet mattis vulputate enim nulla. Elit pellentesque habitant morbi tristique senectus et. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa.
 
