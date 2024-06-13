@@ -118,7 +118,7 @@ main {
 #titolo-text {
     grid-column: 2 / 12;
     font-family: 'Inter', sans-serif;
-    font-size: 144px;
+    font-size: 142px;
     text-align: center;
     z-index: 1;
 }

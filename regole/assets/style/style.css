@@ -118,7 +118,7 @@ header{
 #titolo-text {
     grid-column: 2 / 12;
     font-family: 'Inter', sans-serif;
-    font-size: 144px;
+    font-size: 142px;
     text-align: center;
     z-index: 1;
 }
@@ -213,22 +213,3 @@ footer {
     padding-top: 10px;
     padding-bottom: 60px;
 }
-
-
-/*RESPONSIVE*/
-@media only screen and (max-width: 600px) {
-    .info{
-        width: 40%;
-    }
-
-    #buttons-index {
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        justify-content: space-between;
-        color: rgb(0, 0, 0);
-        padding-right: 20px;
-    }
-  }
