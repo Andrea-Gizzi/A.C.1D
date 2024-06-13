@@ -127,7 +127,7 @@ main{
     font-style: italic;
 }
 
-#content{
+.content{
     padding-top: 40px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -136,16 +136,22 @@ main{
     height: auto;
 }
 
-.cap1 {
+.content .cap1 {
+    padding: 20px 10px; /* Assicurati che questo padding non causi l'effetto indesiderato */
+    margin-top: 0; /* Aggiungi questa regola per assicurarti che non ci siano margini superiori */
     display: grid;
-    grid-template-columns: repeat(12, 1fr); /* Puoi modificare questo se necessario */
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
-    grid-column: 3 / 10; /* Verifica che questo intervallo di colonne sia corretto */
+    grid-column: 3 / 11;
     height: auto;
     width: 100%;
     color: black;
     font-size: 18px;
-    border-bottom: 1px solid black;
+    border-top: 1px solid black; /* Verifica se questo bordo è necessario o rimuovilo se non serve */
+}
+
+.cap1:first-of-type {
+    border-top: none;
 }
 
 .cap1 h2 {
@@ -155,11 +161,11 @@ main{
 }
 
 .cap1 p {
-    grid-column: 4 / span 12; /* Posiziona p nelle colonne 4-10 */
+    grid-column: 5 / span 12; /* Posiziona p nelle colonne 4-10 */
 }
 
 .cap1 .didascalia{
-    grid-column: 2 / span 12;
+    grid-column: 5 / span 12;
     margin-top: 10px;
     text-align: right;
     font-size: 12px;
@@ -169,9 +175,9 @@ main{
 }
 
 .cap1 .immagine{
-    grid-column: 4 / span 12;
+    grid-column: 5 / span 12;
     display: block;
-    margin-top: 60px;
+    margin-top: 40px;
     width: 100%;
     height: auto;
 }

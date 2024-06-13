@@ -98,5 +98,4 @@ window.onload = function() {
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight-80);
 
-    console.log(color)
   }
